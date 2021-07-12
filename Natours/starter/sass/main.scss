@@ -1,9 +1,9 @@
-
 $color-primary: #55c57a;
-$color-primary-light:#7ed56f;
+$color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 $color-grey-dark: #777;
 $color-white: #fff;
+$color-black: #000;
 
 *,
 *::after,
@@ -30,8 +30,9 @@ body {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba( $color-primary-light,0.8),
-      rgba($color-primary-dark,0.801)),
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.801)
+    ),
     url(/img/hero.jpg);
   background-size: cover;
   background-position: top;
@@ -142,12 +143,12 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
 }
 
 .btn--white {
